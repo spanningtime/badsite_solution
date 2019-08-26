@@ -2,7 +2,7 @@
 
 ### Time spent: 7 hours
 
-### Run `npm install` and then run `npm start'
+### Run `npm install` and then run `npm start`
 
 I spent an hour longer than the time limit. I know you told me when I interviewed with you that completing the project didn't matter, but I wanted to complete it for myself, and I was actually having fun, so I spent a little extra time finishing it up and getting to know Justin Bieber's fans, which was exhilirating. 
 

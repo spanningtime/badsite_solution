@@ -7,7 +7,7 @@ const  fs = require('fs'),
 
 const app = express();
 
-const server = app.listen(3000,listening);
+const server = app.listen(3200,listening);
 
 function listening() {
     console.log("listening...");

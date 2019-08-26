@@ -1,27 +1,145 @@
+/* Box sizing */
 html {
-	background: #cyan;
+	box-sizing: border-box;
 }
-dl {
+
+*, 
+*:before, 
+*:after {
+	box-sizing: inherit;
+}
+/* End Box sizing */
+
+/* General styles */
+html {
+	background: #f7f7f7;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+section {
+	padding: 3em;
+}
+
+hr {
+	margin: 0 3em;
+}
+
+.image {
+	width: 100%;
+}
+/* End General styles */
+
+/* Nav */
+nav {
 	background: black;
 }
-dl li{
-	display: inline-block;
 
+.navigation-list {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
-.sectionheader {
+
+.navigation-list__item {
+	display: inline-block;
+	margin: 1em;
+	width: 50px;
+}
+
+.navigation-list__item a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.navigation-list__item a:hover {
+	text-decoration: underline;
+	font-weight: 700;
+}
+/* End Nav */
+
+
+/* Main Content */
+.content {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.section-header {
 	font-size: 1.25em;
+	text-align: center;
+	margin: 0 0 2em;
 }
-a {
+
+.flex-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.flex-container:first-of-type .text {
+	order: 2
+}
+.flex-container:first-of-type .image {
+	order: 1
+}
+@media screen and (min-width: 768px) {
+	.flex-container {
+		flex-direction: row;
+	}
+}
+
+section:first-of-type img {
+	border-radius: 1000px;
+}
+
+.content-section .text {
+	line-height: 2em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media screen and (min-width: 767px) {
+	.content-section:nth-of-type(odd) .text {
+		margin-right: 3em;
+	}
+	.content-section:nth-of-type(even) .text {
+		margin-left: 3em;
+	}
+	.content-section:first-of-type .text {
+		order: 1
+	}
+	.content-section:first-of-type .image {
+		order: 2
+	}
+}
+
+.content-section--half {
+	max-width: 816px;
+	margin: 0 auto;
+}
+
+#chart {
+	padding: 0 3rem;
+}
+
+/* Footer */
+.footer {
+	background: rgba(0,0,0,0.5); 
+	padding: 20px;
+	display: block; 
 	color: #fff;
+	text-align: center;
 }
-.copy span {
-	text-align: right;
-}
-.sectionheader ~ * {
-	width: 50%;
-}
-.text {
-	float: right;
-	width: 30%;
-    margin: 0 15% 0 0;
-}
+/* End Footer */
